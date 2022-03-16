@@ -1,13 +1,95 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background: linear-gradient(120deg, #caffbf 0%, #a0c4ff 100%);
+  }
+
+.app {
+    width: 50%;
+    min-height: 100vh;
+    margin: 10rem auto;
+}
+
+.app_header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.app_title {
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+.app_title img {
+    height: 5rem;
+}
+
+.app_title h1 {
+    line-height: 5rem;
+    font-size: 3rem;
+    padding-left: 1rem;
+}
+.app_search{
+    display: flex;
+    justify-content: center;
+}
+
+.app_search input {
+    width: 28rem;
+    height: 3rem;
+    padding: 1rem;
+    border: 1px solid #34a0a4;
+    border-radius: 4px 0 0 4px;
+    cursor:text;
+  }
+
+.app_search button {
+    width: 3rem;
+    height: 3rem;
+    background-color: #34a0a4; 
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+
+
+.app_list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem 1rem;
+    margin-top: 3rem;
+}
+
+.app_list h2 {
+    width: 25rem;
+    margin-left: 15rem;
+}
+
+.app_card {
+    padding: 1rem;
+    text-align: center;
+}
+
+.app_card:hover {
+    background: #76c893;
+}
+
+.app_card a {
+    color: black;
+}
+
+.app_card img {
+    width: 7rem;
+}
+
+.card-text {
+    font-size: 1.5rem;
 }
